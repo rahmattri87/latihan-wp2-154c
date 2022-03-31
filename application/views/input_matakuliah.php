@@ -1,13 +1,13 @@
+<!-- ----------------- VIEW | INPUT ----------------- -->
 <html>
 
 <body>
 
-    <form action="<?= base_url('Latihan2/cetak'); ?>" method="post">
+    <form action="<?= base_url('index.php/Latihan2/cetak'); ?>" method="post">
         <table border="1%">
-            
+
             <tr>
-                <th colspan="3">
-                    Input Mata Kuliah
+                <th colspan="3"> Input Mata Kuliah
                 </th>
             </tr>
             <tr>
@@ -35,13 +35,16 @@
                 </td>
             </tr>
 
-            <tr>                
+            <tr>
                 <td colspan="3"><input type="submit" name="submit" id="submit" value="submit"></td>
             </tr>
 
         </table>
+
+        <?php echo validation_errors() ?>
+
     </form>
 
-</body>    
+</body>
 
 </html>
